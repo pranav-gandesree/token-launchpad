@@ -9,7 +9,8 @@ import '@solana/wallet-adapter-react-ui/styles.css';
 import './App.css'
 import React from 'react';
 
-import { TokenLaunchpad } from './components/TokenLaunchPad'
+import  TokenLaunchpad  from './components/TokenLaunchPad'
+
 import RequestAirDrop from './components/RequestAirDrop';
 import ShowBalance from './components/ShowBalance';
 import SendTokens from './components/SendTokens';
@@ -32,10 +33,10 @@ function App() {
                 <WalletDisconnectButton />
               </div>
               {/* <RequestAirDrop/> */}
-              {/* <TokenLaunchpad/> */}
+              <TokenLaunchpad/>
                 {/* <ShowBalance/> */}
-                <SendTokens/>
-                <SignMessage/>
+                {/* <SendTokens/>
+                <SignMessage/> */}
             </WalletModalProvider>
         </WalletProvider>
       </ConnectionProvider>
